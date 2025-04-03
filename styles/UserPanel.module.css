@@ -1,0 +1,114 @@
+.userPanel {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.activeTab {
+  background: linear-gradient(45deg, #00b4d8, #90e0ef);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+}
+
+.sessionSection {
+  margin-bottom: 3rem;
+}
+
+.resultsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.resultsTable th {
+  background: rgba(0, 180, 216, 0.15);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.resultsTable td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.winnerRow {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.tieResult {
+  background: rgba(255, 193, 7, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.winnerResult {
+  background: rgba(76, 175, 80, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.votedBadge {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.etherscanLink {
+  color: #4CAF50;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+.socialLinks {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #4CAF50;
+}
+
+.networkHint {
+  background-color:#f5de5b;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: start;
+  font-size: 0.9em;
+  color: #333;
+  display: inline-block; 
+  width: auto; 
+  max-width: 100%; 
+}

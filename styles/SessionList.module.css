@@ -1,0 +1,109 @@
+.sessionList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sessionCard {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sessionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.sessionHeader {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sessionInfo h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sessionTimes {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.statusIndicator {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statusIndicator::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.active {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+}
+
+.active::before {
+  background: #4caf50;
+}
+
+.ended {
+  background: rgba(244, 67, 54, 0.15);
+  color: #f44336;
+}
+
+.ended::before {
+  background: #f44336;
+}
+
+.upcoming {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.upcoming::before {
+  background: #ffc107;
+}
+
+.candidatesList {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.candidateCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.voteButton {
+  background: linear-gradient(45deg, #00b4d8, #90e0ef);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.voteButton:hover {
+  box-shadow: 0 2px 8px rgba(0, 180, 216, 0.3);
+}
